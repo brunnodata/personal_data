@@ -1,0 +1,205 @@
+TECHSTORE PLUS
+PRODUCT MANUAL — SMART HUB HOME
+Model: TSP-SHH-200 (SKU: SH-HOME-2023)
+Effective January 2024
+
+================================================================================
+OVERVIEW
+================================================================================
+
+The Smart Hub Home (TSP-SHH-200) is TechStore Plus's central IoT controller,
+designed to unify devices across multiple smart home ecosystems. It supports
+Zigbee 3.0, Z-Wave Plus, Wi-Fi 6, and Bluetooth 5.2 simultaneously, acting as
+a protocol bridge so devices from different manufacturers can be automated
+together through a single app.
+
+Compatible ecosystems: Apple HomeKit, Google Home, Amazon Alexa, and the native
+TechStore SmartHome app (iOS / Android). Local processing mode available —
+automations run without a cloud connection after initial setup.
+
+Key features:
+- Controls up to 200 Zigbee/Z-Wave devices per hub
+- Built-in Zigbee coordinator and Z-Wave controller
+- Local automation engine (no cloud required for routines)
+- Matter 1.2 bridge: expose Zigbee/Z-Wave devices to Matter controllers
+- 2x USB-A ports for USB Zigbee/Z-Wave dongles (optional expansion)
+- 1x Gigabit Ethernet port (recommended for stability)
+- Mesh Wi-Fi extension when paired with Router NX300 or Router NX200
+
+================================================================================
+MESH NETWORKING REQUIREMENT
+================================================================================
+
+The Smart Hub Home's mesh Wi-Fi extension feature requires a Router NX300 or
+Router NX200 as the primary network gateway. This is a REQUIRED dependency for
+mesh functionality:
+
+- The Smart Hub Home requires the Router NX300 (recommended) or Router NX200 to
+  act as the mesh network controller. Without one of these routers, the Smart Hub
+  Home functions only as a standalone smart device hub (Zigbee/Z-Wave controller)
+  and cannot extend Wi-Fi coverage.
+- When the Smart Hub Home is connected to the Router NX300 via Ethernet, together
+  they cover up to 4,000 sq ft under a single unified SSID.
+- The Router NX300 is preferred over the Router NX200 for mesh pairing because the
+  NX300's Qualcomm IPQ5018 chipset supports Wi-Fi 6 mesh backhaul, delivering up
+  to 40% better throughput in the extended coverage zone.
+
+In summary: Smart Hub Home REQUIRES Router NX300 or Router NX200 for mesh
+networking. The Smart Hub Home WORKS WITH Router NX300 as its primary mesh partner.
+
+================================================================================
+COMPATIBLE DEVICES AND ACCESSORIES
+================================================================================
+
+The Smart Hub Home is designed to work with the following TechStore Plus products:
+
+1. Router NX300 (SKU: RT-NX300-2024) — Required for mesh networking
+   The Router NX300 is the primary gateway that the Smart Hub Home requires for
+   its mesh Wi-Fi feature. Connect the Smart Hub Home to a LAN port on the Router
+   NX300 via Ethernet for the most stable mesh connection. See the Router NX300
+   manual for mesh setup instructions.
+
+2. Router NX200 (legacy) — Also supported for mesh
+   The Router NX200 (2022 model, now discontinued but still supported) can also
+   act as the primary gateway for the Smart Hub Home's mesh feature. However,
+   since the Router NX200 uses Wi-Fi 5 (802.11ac), mesh throughput is lower than
+   with the Router NX300. Existing Router NX200 owners can trade in toward the
+   Router NX300 (see trade_in_program.txt).
+
+3. Smart Cam 4K (SKU: SM-CAM-4K) — Works with Smart Hub Home
+   The Smart Cam 4K works with the Smart Hub Home for unified home security
+   management. When the Smart Cam 4K is paired with the Smart Hub Home, motion
+   alerts from the camera can trigger automations on other connected devices
+   (e.g., turn on Smart Speaker Mini, activate Smart Plug 2-pack). The Smart Cam 4K
+   can also connect directly via Wi-Fi (Router NX300 recommended for 4K streaming).
+
+4. Smart Speaker Mini (SKU: SM-SPK-MINI) — Works with Smart Hub Home
+   The Smart Speaker Mini works with the Smart Hub Home as a voice command endpoint
+   for home automations. It supports Amazon Alexa and Google Assistant, both of
+   which integrate with the TechStore SmartHome app via the Smart Hub Home.
+
+5. Smart Plug 2-pack (SKU: SM-PLG-2PK) — Works with Smart Hub Home
+   The Smart Plug 2-pack works with the Smart Hub Home via Zigbee 3.0 for local
+   control without cloud dependency. The Smart Hub Home controls up to 200 Zigbee
+   devices, including multiple Smart Plug 2-packs across a home.
+
+BUNDLE: Smart Home Starter Kit — $299 (save $37 vs. individual prices)
+  Includes: Smart Hub Home + Smart Cam 4K + Smart Speaker Mini
+  Note: This bundle does NOT include a router. The Smart Hub Home's mesh feature
+  requires a Router NX300 or Router NX200 purchased separately.
+
+NOT COMPATIBLE: Proprietary RF protocols (old Insteon, X10), Bluetooth Mesh
+(requires firmware update to TSP-SHH-200 v2.4+), Thread (on roadmap Q3 2024).
+
+================================================================================
+IN THE BOX
+================================================================================
+
+- Smart Hub Home unit (TSP-SHH-200)
+- 5V/3A USB-C power adapter
+- 1m CAT-5e Ethernet cable
+- Quick Start Guide
+- Warranty Registration Card
+
+================================================================================
+INITIAL SETUP
+================================================================================
+
+1. Place the Smart Hub Home near your Wi-Fi router for a stable connection.
+   Wired Ethernet via the Router NX300 or Router NX200 is strongly recommended.
+2. Connect the Ethernet cable from the hub to a LAN port on your router.
+   NOTE: For mesh functionality, use the Router NX300 or Router NX200 only.
+3. Connect the USB-C power adapter. The LED ring will pulse blue during boot
+   (approximately 90 seconds).
+4. Download the TechStore SmartHome app from the App Store or Google Play.
+5. In the app, tap "Add Hub" and scan the QR code on the hub's bottom label.
+6. Follow the in-app wizard:
+   a. Name your home and location.
+   b. Connect the hub to your Wi-Fi network (if not using Ethernet).
+   c. Enable cloud sync if you want remote access and voice assistant integration.
+   d. Accept the End-User License Agreement (EULA).
+   e. If you have a Router NX300 or Router NX200, tap "Enable Mesh" to configure
+      the Smart Hub Home as a secondary Wi-Fi access point.
+7. Add your first device: tap "+" in the app and follow the device pairing flow
+   for Zigbee, Z-Wave, or Wi-Fi devices.
+8. Register your warranty at techstoreplus.com/warranty using the serial number
+   on the bottom label (format: SHH-XXXXXXXX).
+
+================================================================================
+DEVICE COMPATIBILITY MATRIX
+================================================================================
+
+Supported protocols:
+- Zigbee 3.0: lights, sensors, outlets, locks, blinds (Philips Hue, IKEA Tradfri,
+  Aqara, Sonoff, and most Zigbee 3.0 certified devices)
+- Z-Wave Plus: door locks, thermostats, security sensors (Yale, Schlage, Leviton)
+- Wi-Fi: Smart Cam 4K, Smart Speaker Mini, Smart Plug 2-pack via LAN integration
+- Matter 1.2: bridge mode exposes Zigbee/Z-Wave devices to Apple HomeKit,
+  Google Home, and Amazon Alexa without additional bridges
+- Mesh Wi-Fi: requires Router NX300 or Router NX200 as primary gateway
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+ISSUE: Hub LED pulses red — cannot connect to network
+- Check that the Ethernet cable is firmly connected (preferred) or re-enter Wi-Fi
+  credentials in the TechStore SmartHome app (Hub Settings > Network).
+- Restart the hub (hold the side button 5 seconds until LED pulses white).
+- Verify the router (Router NX300 or Router NX200) is online and operational.
+
+ISSUE: Mesh Wi-Fi not working after setup
+- Mesh requires the Router NX300 or Router NX200. If using a third-party router,
+  mesh functionality is not available.
+- Confirm the Smart Hub Home is connected to a LAN port (not WAN) on the router.
+- In the NX300 app, go to Network > Mesh and verify the Smart Hub Home appears
+  as an active mesh node. If not, re-run the mesh pairing from the NX300 app.
+
+ISSUE: Zigbee device not pairing
+- Put the hub into pairing mode (app > Hub > Add Device > Zigbee) and reset the
+  target device according to its own manual.
+- Ensure the device is within 15 meters of the hub during pairing.
+- Update hub firmware to the latest version (app > Hub Settings > Firmware Update).
+
+ISSUE: Smart Cam 4K motion alerts not triggering automations
+- Verify the Smart Cam 4K is paired with the Smart Hub Home (app > Devices >
+  Smart Cam 4K > Status: Paired).
+- Check that the automation trigger is set to "Motion Detected — Smart Cam 4K"
+  in the Automations editor.
+- If the Smart Cam 4K is on the Router NX300 mesh network and the Smart Hub Home
+  is the local hub, confirm both devices share the same network SSID.
+
+ISSUE: Automations not triggering
+- Check that Local Automation mode is enabled (app > Settings > Local Processing = ON).
+- Verify that all devices involved in the automation are online (green status icon).
+- Review the automation log (app > Automations > [name] > History) for errors.
+
+ISSUE: App shows "Hub Offline"
+- Check router firewall: the hub requires outbound access to hub.techstoreplus.com
+  on port 443 for cloud features.
+- If running in Local Mode only, the "Offline" banner is expected — local
+  automations still run normally.
+
+================================================================================
+WARRANTY INFORMATION
+================================================================================
+
+The Smart Hub Home is covered by the TechStore Plus Standard Warranty (Tier 2)
+for 24 months from the date of purchase (30 months for units purchased on or
+after January 1, 2024, per the updated Standard tier terms). Coverage includes
+manufacturing defects and hardware failures under normal use.
+
+NOT COVERED: Physical damage, liquid damage, damage from unsupported firmware or
+third-party modifications, consumables (USB Zigbee/Z-Wave dongles sold separately).
+
+POLICY HISTORY NOTE: If you purchased the Smart Hub Home before January 1, 2024,
+your Standard Warranty provides 24 months coverage under Warranty Terms v2.0 (2023).
+If purchased on or after January 1, 2024, Standard coverage is 30 months under the
+current Warranty Terms v3.0 (2024). See policy_warranty_terms.txt and
+policy_warranty_terms_2023.txt for the respective full terms.
+
+OPTIONAL EXTENSION: Standard Extension (+1 year) or Premium Protection Plan
+(+2 years with accidental/liquid coverage) available within 90 days of purchase.
+See service_catalog.txt for full service details.
+
+Contact: support@techstoreplus.com | 1-800-TECH-PLUS | Chat 24/7

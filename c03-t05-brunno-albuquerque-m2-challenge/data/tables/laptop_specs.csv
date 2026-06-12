@@ -1,0 +1,6 @@
+model,sku,ram_gb,storage_gb,price_usd,warranty_tier,replaces_model,trade_in_eligible,trade_in_credit_usd,trade_in_toward
+Laptop Pro X1,LP-X1-2024,16,512,1299,premium_2024,Laptop Pro X0,No,,
+Laptop Air S2,LA-S2-2023,8,256,799,standard_2024,,Yes,200,Laptop Pro X1 or WorkStation Z
+Laptop Lite V3,LL-V3-2023,4,128,499,basic,,Yes,100,Laptop Air S2 only
+WorkStation Z,WS-Z-2024,64,2048,3299,premium_2024,,No,,
+Laptop Pro X0,LP-X0-2022,16,256,999,standard_2023,,Yes,150,Laptop Pro X1
