@@ -1,0 +1,162 @@
+TECHSTORE PLUS — PROGRAM DOCUMENT
+TITLE: Trade-In Program — Terms and Credit Values
+Program ID: PRG-TRD-001
+Effective: January 1, 2024
+Updated: January 2024
+
+================================================================================
+OVERVIEW
+================================================================================
+
+The TechStore Plus Trade-In Program allows customers to exchange eligible
+TechStore Plus products for a credit that can be applied toward the purchase of
+a newer TechStore Plus product. Trade-in credits are non-cash and must be applied
+at the time of purchase. Credits cannot be combined with promotional discounts
+unless otherwise stated.
+
+The Trade-In Program is eligible for combining with TechStore Plus Financing
+(0% APR, 12 monthly installments). See the Financing section below for examples.
+
+================================================================================
+ELIGIBLE TRADE-IN PRODUCTS AND CREDIT VALUES
+================================================================================
+
+LAPTOPS
+
+  Laptop Air S2 (SKU: LA-S2-2023) — Trade-in credit: $200
+    Eligible upgrade destinations: Laptop Pro X1 OR WorkStation Z
+    The Laptop Air S2 is eligible for a $200 trade-in credit toward the purchase
+    of either the Laptop Pro X1 ($1,299) or the WorkStation Z ($3,299).
+    After trade-in credit: Laptop Pro X1 net cost = $1,099 | WorkStation Z net = $3,099.
+    Note: Laptop Air S2 trade-in credit is NOT eligible toward another Laptop Air S2
+    or toward Laptop Lite V3 (downgrade restriction).
+
+  Laptop Lite V3 (SKU: LL-V3-2023) — Trade-in credit: $100
+    Eligible upgrade destination: Laptop Air S2 ONLY
+    The Laptop Lite V3 is eligible for a $100 trade-in credit toward the Laptop Air S2
+    ($799). After trade-in: Laptop Air S2 net cost = $699.
+    RESTRICTION: The Laptop Lite V3 trade-in credit CANNOT be applied toward the
+    Laptop Pro X1, WorkStation Z, or any Premium tier product. Customers wishing
+    to upgrade from Laptop Lite V3 to Laptop Pro X1 must first trade in for a
+    Laptop Air S2, then separately trade in the Laptop Air S2 toward the Laptop Pro X1.
+    The Trade-In Program does not support multi-step single-transaction upgrades;
+    each trade-in is a separate transaction.
+
+  Laptop Pro X0 (SKU: LP-X0-2022, discontinued) — Trade-in credit: $150
+    Eligible upgrade destination: Laptop Pro X1
+    The Laptop Pro X0 is the direct predecessor to the Laptop Pro X1. Existing
+    Laptop Pro X0 owners can apply a $150 trade-in credit toward the Laptop Pro X1
+    ($1,299). After trade-in: Laptop Pro X1 net cost = $1,149.
+    The Laptop Pro X1 replaces the Laptop Pro X0 in TechStore Plus's lineup.
+
+NETWORKING
+
+  Router NX200 (SKU: RT-NX200-2022, discontinued) — Trade-in credit: $50
+    Eligible upgrade destination: Router NX300
+    The Router NX200 is the direct predecessor to the Router NX300. Existing
+    Router NX200 owners can apply a $50 trade-in credit toward the Router NX300
+    ($199). After trade-in: Router NX300 net cost = $149.
+    The Router NX300 replaces the Router NX200 in TechStore Plus's lineup.
+
+SMART HOME
+
+  Smart Hub Home Gen 1 (SKU: SH-HOME-2021, discontinued) — Trade-in credit: $30
+    Eligible upgrade destination: Smart Hub Home Gen 2 (when available)
+    Gen 1 Smart Hub Home owners can reserve a $30 trade-in credit toward the
+    Smart Hub Home Gen 2, anticipated Q3 2024. Credit is held on the customer's
+    TechStore Plus account until the Gen 2 unit is available for purchase.
+
+================================================================================
+PRODUCTS NOT ELIGIBLE FOR TRADE-IN
+================================================================================
+
+The following current products are NOT eligible to be traded in (they are traded
+INTO, not out of):
+
+  - Laptop Pro X1 (LP-X1-2024) — current flagship laptop
+  - WorkStation Z (WS-Z-2024) — current flagship desktop
+  - Router NX300 (RT-NX300-2024) — current flagship router
+  - Any accessory (Docking Station Pro, USB-C Hub 7-in-1, Thunderbolt 4 Hub, etc.)
+  - Smart Cam 4K, Smart Speaker Mini, Smart Plug 2-pack
+
+================================================================================
+UPGRADE PATH SUMMARY
+================================================================================
+
+The following upgrade paths are supported by the Trade-In Program:
+
+  Laptop Lite V3 → [trade-in $100] → Laptop Air S2
+  Laptop Air S2 → [trade-in $200] → Laptop Pro X1
+  Laptop Air S2 → [trade-in $200] → WorkStation Z
+  Laptop Pro X0 → [trade-in $150] → Laptop Pro X1
+  Router NX200 → [trade-in $50] → Router NX300
+  Smart Hub Home Gen 1 → [trade-in $30] → Smart Hub Home Gen 2
+
+NOT SUPPORTED as a single transaction:
+  Laptop Lite V3 → Laptop Pro X1 (must intermediate via Laptop Air S2)
+  Laptop Lite V3 → WorkStation Z (must intermediate via Laptop Air S2)
+
+================================================================================
+COMBINING TRADE-IN WITH FINANCING
+================================================================================
+
+Trade-in credits can be combined with TechStore Plus Financing (0% APR, 12 monthly
+installments, available on purchases over $500). The trade-in credit is applied
+as a down payment, reducing the financed amount.
+
+Example 1 — Laptop Air S2 trade-in + Laptop Pro X1 + Financing:
+  Laptop Pro X1 price:          $1,299
+  Laptop Air S2 trade-in:       - $200
+  Net financed amount:          $1,099
+  Monthly payment (12 months):  $91.58/month at 0% APR
+
+Example 2 — Laptop Air S2 trade-in + WorkStation Z + Financing:
+  WorkStation Z price:          $3,299
+  Laptop Air S2 trade-in:       - $200
+  Net financed amount:          $3,099
+  Monthly payment (12 months):  $258.25/month at 0% APR
+
+Example 3 — Router NX200 trade-in + Router NX300 (no financing needed):
+  Router NX300 price:           $199
+  Router NX200 trade-in:        - $50
+  Amount due at purchase:       $149 (below $500 financing threshold)
+
+================================================================================
+TRADE-IN PROCESS
+================================================================================
+
+1. Initiate the trade-in online at techstoreplus.com/trade-in or at any
+   TechStore Plus retail location.
+2. Provide the serial number of the product being traded in.
+3. TechStore Plus will assess the device condition:
+   - Good condition (no cracked screen, no missing parts): full credit value.
+   - Fair condition (minor cosmetic damage): 75% of credit value.
+   - Poor condition (significant damage, non-functional): 50% of credit value.
+4. Accept the credit offer. The credit is applied immediately to a qualifying
+   purchase or held on your account for up to 60 days.
+5. Ship the trade-in device using the prepaid label provided by TechStore Plus.
+   Devices must be received within 14 days of credit offer acceptance.
+
+================================================================================
+TERMS AND CONDITIONS
+================================================================================
+
+- Trade-in credits are non-transferable and non-refundable.
+- Credits cannot be exchanged for cash.
+- Products must be original TechStore Plus purchases (verified by serial number).
+- Trade-in program values are subject to change. The values listed in this document
+  are current as of January 2024.
+- Combining with promotions: trade-in credits cannot be combined with bundle
+  discounts (Home Office Bundle, Creator Bundle) unless TechStore Plus explicitly
+  authorizes a combined offer in writing.
+- Financing eligibility: 0% APR financing requires a credit check. Subject to
+  approval. Available for purchases over $500.
+
+================================================================================
+CONTACT
+================================================================================
+
+Trade-in inquiries:
+Email:  trade-in@techstoreplus.com
+Phone:  1-800-TECH-PLUS (Mon-Fri 9:00-18:00, Sat 10:00-14:00)
+Web:    techstoreplus.com/trade-in

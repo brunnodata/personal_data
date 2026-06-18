@@ -1,0 +1,166 @@
+TECHSTORE PLUS — SERVICE CATALOG
+TITLE: Available Services and Coverage
+Document ID: SVC-CAT-001
+Effective: January 2024
+
+================================================================================
+OVERVIEW
+================================================================================
+
+TechStore Plus offers the following services for products purchased through its
+channels. Services are sold separately from the product unless noted. This catalog
+describes eligibility, pricing, and coverage for each service.
+
+For warranty terms, see policy_warranty_terms.txt (current, v3.0) or
+policy_warranty_terms_2023.txt (archived, v2.0, for purchases before 2024).
+For trade-in credits and upgrade paths, see trade_in_program.txt.
+
+================================================================================
+SERVICE 1 — TECHNICAL SUPPORT
+================================================================================
+
+Name: Technical Support (TechAssist)
+Availability: All TechStore Plus hardware products
+Cost:
+  - First 90 days from purchase: FREE (included with every TechStore Plus product)
+  - After 90 days (without warranty extension): $29 per incident
+  - After 90 days (with Standard Warranty Extension, Tier 2): $29 per incident
+    (Standard tier does not include post-90-day free technical support)
+  - After 90 days (with Premium Protection Plan, Tier 3): INCLUDED at no charge
+    Technical support is included as a benefit of the Premium Protection Plan for
+    the full duration of the plan (36 months). This applies to Laptop Pro X1,
+    WorkStation Z, and Router NX300.
+
+Coverage:
+  - Phone, email, and chat support (1-800-TECH-PLUS, support@techstoreplus.com)
+  - Remote diagnostics (screen share session for laptop and desktop products)
+  - Firmware guidance (Router NX300, Smart Hub Home)
+  - Setup assistance for Smart Hub Home mesh pairing with Router NX300
+  - Driver and software troubleshooting (Windows 11, app issues)
+
+NOT covered by Technical Support (any tier):
+  - Third-party software issues (non-TechStore Plus apps)
+  - Data recovery
+  - Network infrastructure issues beyond TechStore Plus devices
+
+================================================================================
+SERVICE 2 — EXTENDED WARRANTY ADD-ON (1 YEAR)
+================================================================================
+
+Name: Extended Warranty Add-On
+Availability: Premium tier products ONLY
+  - Laptop Pro X1 (SKU: LP-X1-2024)
+  - WorkStation Z (SKU: WS-Z-2024)
+  - Router NX300 (SKU: RT-NX300-2024)
+
+The Extended Warranty Add-On is NOT available for Standard tier products (Laptop
+Air S2, Smart Hub Home) or Basic tier products (Laptop Lite V3, Smart Cam 4K).
+Standard tier customers should instead purchase the Standard Warranty Extension
+(described in policy_warranty_terms.txt) within 90 days of purchase.
+
+Cost: $49 flat fee per product per year
+Duration: Extends Premium Protection Plan by 12 additional months (from 36 months
+          to 48 months total)
+Coverage: Same as Premium Protection Plan (Tier 3) — hardware failure, accidental
+          damage, water damage (as of v3.0, 2024 terms)
+Eligibility window: Must be purchased before the original 36-month Premium plan expires.
+Limit: Maximum 2 add-on years (48 months + 12 + 12 = maximum 60 months total coverage).
+
+================================================================================
+SERVICE 3 — HOME INSTALLATION SERVICE
+================================================================================
+
+Name: Home Installation Service
+Cost: $49 flat fee (one-time, per installation session)
+Duration: 2-hour on-site visit by a certified TechStore Plus technician.
+
+Available for the following products:
+  - Router NX300 (SKU: RT-NX300-2024)
+    Technician will: physically install the router in the optimal location, configure
+    the Setup Wizard, set up WPA3 security, configure ISP connection type, and
+    optionally pair with Smart Hub Home for mesh networking.
+  - Smart Hub Home (SKU: SH-HOME-2023)
+    Technician will: connect the Smart Hub Home to the Router NX300 (or Router NX200)
+    via Ethernet, configure the TechStore SmartHome app, enable mesh networking,
+    and pair up to 5 initial smart devices (Zigbee, Z-Wave, or Wi-Fi).
+  - Smart Cam 4K (SKU: SM-CAM-4K)
+    Technician will: mount the Smart Cam 4K in a customer-selected location, connect
+    to the Smart Hub Home or Router NX300 network, and configure motion alerts.
+
+NOT available for: Laptop Pro X1, Laptop Air S2, Laptop Lite V3, WorkStation Z,
+or any accessory product. Those products use self-guided setup manuals.
+
+Booking: techstoreplus.com/installation or 1-800-TECH-PLUS
+Available Mon-Fri 9:00-17:00, Sat 10:00-14:00, within 50 miles of TechStore Plus
+service centers.
+
+================================================================================
+SERVICE 4 — TRADE-IN PROGRAM
+================================================================================
+
+Name: Trade-In Program
+Details: See trade_in_program.txt for complete terms, eligible products, and credit
+         values. Summary of eligible trade-in products:
+
+  - Laptop Air S2 → $200 credit toward Laptop Pro X1 or WorkStation Z
+  - Laptop Lite V3 → $100 credit toward Laptop Air S2 only
+  - Laptop Pro X0 → $150 credit toward Laptop Pro X1
+  - Router NX200 → $50 credit toward Router NX300
+  - Smart Hub Home Gen 1 → $30 credit toward Smart Hub Home Gen 2 (when available)
+
+Can be combined with Financing (Service 5). Cannot be combined with bundle discounts.
+
+================================================================================
+SERVICE 5 — FINANCING (0% APR, 12 MONTHLY INSTALLMENTS)
+================================================================================
+
+Name: TechStore Plus Financing
+Provider: TechStore Plus Financial Services (in partnership with First Capital Bank)
+Cost: $0 interest (0% APR) — total paid equals purchase price
+Eligibility: Purchases over $500. Subject to credit approval.
+Terms: 12 equal monthly payments. No early repayment penalty.
+
+Eligible products for financing:
+  - Any single purchase over $500, including:
+    - Laptop Pro X1 ($1,299) — eligible
+    - Laptop Air S2 ($799) — eligible
+    - WorkStation Z ($3,299) — eligible
+    - Router NX300 ($199) — NOT eligible alone (under $500)
+    - Home Office Bundle ($1,379) — eligible
+    - Creator Bundle ($3,599) — eligible
+  - Financing CAN be combined with trade-in credits (trade-in reduces financed total)
+
+Examples:
+  Laptop Pro X1 ($1,299) / 12 months = $108.25/month
+  WorkStation Z ($3,299) / 12 months = $274.92/month
+  Laptop Air S2 ($799) / 12 months = $66.58/month
+  Laptop Air S2 trade-in ($200 off) + WorkStation Z = $3,099 / 12 = $258.25/month
+
+Application: techstoreplus.com/financing or at point of purchase online/in-store.
+Approval decision: within 60 seconds online; same-day in-store.
+
+================================================================================
+SERVICE ELIGIBILITY MATRIX
+================================================================================
+
+                         | Laptop | Laptop | Laptop | Work  | Router | Smart | Smart
+                         | Pro X1 | Air S2 | Lite V3| Sta Z | NX300  | Hub H | Cam 4K
+-------------------------|--------|--------|--------|-------|--------|-------|-------
+Technical Support (free  |        |        |        |       |        |       |
+90 days)                 | YES    | YES    | YES    | YES   | YES    | YES   | YES
+Technical Support        |        |        |        |       |        |       |
+(Premium incl. 36 mo)    | YES    | no     | no     | YES   | YES    | no    | no
+Extended Warranty 1yr    | YES    | no     | no     | YES   | YES    | no    | no
+Home Installation Svc    | no     | no     | no     | no    | YES    | YES   | YES
+Trade-In (trade out of)  | no     | YES    | YES    | no    | no     | Gen1  | no
+Financing (0% APR)       | YES    | YES    | no     | YES   | no     | no    | no
+
+================================================================================
+CONTACT
+================================================================================
+
+Service inquiries:
+Email:   support@techstoreplus.com
+Phone:   1-800-TECH-PLUS (Mon-Fri 9:00-18:00, Sat 10:00-14:00)
+Chat:    Available 24/7 at techstoreplus.com
+Web:     techstoreplus.com/services
