@@ -1,0 +1,171 @@
+TECHSTORE PLUS — POLICY DOCUMENT (ARCHIVED)
+TITLE: Warranty Terms and Conditions — Version 2.0 (2023)
+Policy ID: POL-WRN-002
+Effective: January 1, 2023
+Superseded by: Warranty Terms v3.0 (2024) — Policy ID: POL-WRN-001
+Archived: January 1, 2024
+
+NOTICE: This document is archived. It applies ONLY to products purchased between
+January 1, 2023 and December 31, 2023. For products purchased on or after
+January 1, 2024, see the current Warranty Terms v3.0 in policy_warranty_terms.txt.
+The current policy (v3.0) amends and supersedes this document in key coverage areas.
+
+================================================================================
+CHANGES IN THE 2024 UPDATE (v3.0 AMENDS v2.0)
+================================================================================
+
+The following changes were made in Warranty Terms v3.0 (effective January 1, 2024)
+compared to this archived v2.0 (2023) document:
+
+1. PREMIUM TIER — ACCIDENTAL DAMAGE: Not covered under v2.0 (2023). NOW COVERED
+   under v3.0 (2024) for all Premium tier products, including Laptop Pro X1,
+   WorkStation Z, and Router NX300. This is the most significant change.
+
+2. PREMIUM TIER — WATER DAMAGE: Not covered under v2.0 (2023). NOW COVERED
+   under v3.0 (2024) for all Premium tier products including the Router NX300.
+   Under v2.0, no tier covered water damage for networking equipment.
+
+3. STANDARD TIER — DURATION: Extended from 24 months (v2.0) to 30 months (v3.0).
+   Products purchased before January 1, 2024 under Standard tier receive 24 months.
+   Products purchased on or after January 1, 2024 under Standard tier receive 30 months.
+
+4. BASIC TIER: Unchanged between v2.0 and v3.0 — 12 months, no accidental coverage,
+   no water damage coverage.
+
+These changes are relevant for multi-hop warranty queries: a product purchased
+in 2023 and covered by this archived v2.0 policy does NOT have accidental or water
+damage coverage under Premium tier, even if the current product page advertises
+v3.0 coverage. The coverage that applies is determined by purchase date.
+
+================================================================================
+OVERVIEW
+================================================================================
+
+TechStore Plus provides a Limited Warranty on all hardware products sold through
+its channels (online and in-store). This document defines the scope, duration,
+exclusions, and claim process for each warranty tier as applicable to products
+purchased between January 1, 2023 and December 31, 2023. Three warranty tiers
+were available under this version of the policy.
+
+================================================================================
+WARRANTY TIERS — VERSION 2.0 (2023)
+================================================================================
+
+TIER 1 — BASIC WARRANTY (v2.0, 2023)
+- Duration: 12 months from the date of purchase.
+- Coverage: manufacturing defects and hardware component failures under normal use.
+- Does NOT cover: accidental damage, liquid/water damage, cosmetic damage (dents,
+  scratches), unauthorized modifications, consumable degradation.
+- Eligible products: all TechStore Plus hardware at no additional charge.
+- Monthly cost: $0.00 (included with purchase).
+- Products covered at this tier in 2023: Laptop Lite V3, Smart Cam 4K, Smart
+  Speaker Mini, Smart Plug 2-pack.
+
+TIER 2 — STANDARD WARRANTY EXTENSION (v2.0, 2023)
+- Duration: 24 months total (12 months Basic + 12 months extension).
+  NOTE: v3.0 (2024) extended this to 30 months for new purchases.
+- Coverage: everything in Tier 1 plus priority service (next available technician,
+  no queue wait) and free on-site diagnosis for laptops.
+- Does NOT cover: accidental damage, liquid damage.
+- Eligible products: all TechStore Plus hardware.
+- Must be purchased within 90 days of the original product purchase.
+- Monthly cost: $4.99 per product.
+- Products covered at this tier in 2023: Laptop Air S2, Laptop Pro X0, Smart Hub Home.
+
+TIER 3 — PREMIUM PROTECTION PLAN (v2.0, 2023)
+- Duration: 36 months total (12 months Basic + 24 months Premium extension).
+- Coverage: everything in Tier 2 PLUS... HARDWARE FAILURE ONLY FOR ALL PRODUCTS.
+  IMPORTANT DIFFERENCE FROM v3.0 (2024): Under this v2.0 (2023) policy, the
+  Premium tier does NOT cover accidental damage (drops, spills, cracks).
+  Under this v2.0 (2023) policy, the Premium tier does NOT cover liquid or
+  water damage for any product category, including networking equipment.
+  This is a critical distinction: a Laptop Pro X1 purchased in 2023 under the
+  Premium tier is covered for hardware failures only — not drops, not spills.
+  The 2024 update (v3.0) changed this to include accidental and water damage.
+- Eligible products: laptops, tablets, smartphones, smart home devices,
+  networking equipment (hardware failure only).
+- Must be purchased within 90 days of the original product purchase.
+- Monthly cost: $9.99 per product.
+- Products covered at this tier in 2023: Laptop Pro X1 (2023 build), Router NX300
+  (note: Router NX300 launched January 2024, so no 2023 purchases exist for it),
+  Router NX200, WorkStation Z.
+
+================================================================================
+WHAT THE WARRANTY COVERS (ALL TIERS, v2.0 2023)
+================================================================================
+
+- Manufacturing defects: components that fail during normal use without external
+  physical cause.
+- Dead pixels: display panels with more than 3 dead pixels within the warranty period.
+- Battery defect: cells that fail to hold any charge within 12 months of purchase.
+  NOTE: battery capacity degradation below 80% is expected wear and is NOT covered.
+- Port failure: USB, HDMI, audio, or proprietary ports that stop functioning
+  without physical damage.
+- Keyboard/trackpad failure: hardware malfunction, not software or driver issues.
+
+================================================================================
+WHAT THE WARRANTY DOES NOT COVER (ALL TIERS, v2.0 2023)
+================================================================================
+
+- Physical damage caused by the user (dropping, bending, crushing) — NOT covered
+  under any tier in this v2.0 policy. (v3.0 added Premium tier coverage.)
+- Liquid or water damage — NOT covered under any tier in this v2.0 policy.
+  (v3.0 added Premium tier coverage.)
+- Damage from using non-TechStore Plus power adapters rated outside specification.
+- Software issues, viruses, malware, OS corruption.
+- Cosmetic damage not affecting function (scratches, dents, discoloration).
+- Consumables: replacement chargers, replacement cables, cleaning accessories.
+- Products with removed, altered, or illegible serial number labels.
+- Products repaired by unauthorized third parties.
+- Damage caused by acts of God: fire, flood, lightning strikes, earthquakes.
+
+================================================================================
+REPAIR, REPLACEMENT, AND REFUND POLICY (v2.0 2023)
+================================================================================
+
+When a covered claim is approved, TechStore Plus will, at its sole discretion:
+1. REPAIR the product using original or equivalent-quality parts, or
+2. REPLACE the product with a refurbished or new unit of equal or greater
+   specifications, or
+3. REFUND the original purchase price if repair and replacement are not feasible.
+
+TechStore Plus covers all shipping costs for warranty service. Standard repair
+turnaround time is 5-10 business days after receipt of the product.
+
+================================================================================
+HOW TO FILE A CLAIM (v2.0 2023)
+================================================================================
+
+The claim process is the same under both v2.0 and v3.0 policies:
+See support_warranty_claim_process.txt for the complete step-by-step process.
+In summary:
+1. Go to techstoreplus.com/claims or call 1-800-TECH-PLUS.
+2. Provide your proof of purchase and serial number.
+3. Describe the defect. TechStore Plus will respond within 1 business day.
+Note: When filing a claim, TechStore Plus support will verify your purchase date
+to determine whether v2.0 (2023) or v3.0 (2024) terms apply.
+
+================================================================================
+PRODUCTS COVERED UNDER THIS ARCHIVED v2.0 (2023) POLICY
+================================================================================
+
+The following products were sold during the 2023 policy period and are covered
+under these terms if purchased between January 1, 2023 and December 31, 2023:
+
+- Laptop Pro X1 (early builds shipped Q4 2023; Premium tier, hardware-only)
+- Laptop Air S2 (Standard tier, 24 months)
+- Laptop Lite V3 (Basic tier, 12 months)
+- Laptop Pro X0 (Standard or Premium add-on; Premium = hardware-only)
+- Router NX200 (Standard or Premium add-on; Premium = hardware-only)
+- Smart Hub Home (Standard tier, 24 months)
+- Smart Cam 4K (Basic tier, 12 months)
+
+================================================================================
+CONTACT
+================================================================================
+
+Warranty claims and questions:
+Email:  support@techstoreplus.com
+Phone:  1-800-TECH-PLUS (Mon-Fri 9:00-18:00, Sat 10:00-14:00)
+Chat:   Available 24/7 at techstoreplus.com
+Web:    techstoreplus.com/warranty

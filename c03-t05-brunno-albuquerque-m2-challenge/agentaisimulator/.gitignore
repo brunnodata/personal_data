@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- Vector store / generated data ---
+backend/app/data/chroma/
+# Downloaded FlashRank reranker model (054-rag-block-expansion); fetched on first
+# use / pre-baked into the Docker image, never committed.
+backend/app/data/flashrank/
+*.sqlite3
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# --- OS / editor ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+.env
+*.env
+chroma_db/
+__pycache__/
+.venv/

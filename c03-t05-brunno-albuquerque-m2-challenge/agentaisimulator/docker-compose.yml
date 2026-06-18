@@ -1,0 +1,38 @@
+# One command to run the whole simulator:  docker compose up --build
+#
+# - backend  -> FastAPI + LangGraph agent on http://localhost:8000
+# - frontend -> static React build served by nginx on http://localhost:5173
+#
+# The app runs ONLY against OpenAI — set OPENAI_API_KEY. With no key the
+# backend fails fast at startup.
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      # Required — the app is OpenAI-only and has no demo/mock mode. Start with:
+      #   OPENAI_API_KEY=sk-... docker compose up
+      # (or put it in a .env file next to this docker-compose.yml).
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ALLOWED_ORIGINS: http://localhost:5173,http://127.0.0.1:5173
+    volumes:
+      # Persist the vector store between runs.
+      - chroma-data:/app/app/data/chroma
+      # Persist uploaded documents (object storage) between runs.
+      - storage-data:/app/app/data/storage
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE: http://localhost:8000
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  chroma-data:
+  storage-data:

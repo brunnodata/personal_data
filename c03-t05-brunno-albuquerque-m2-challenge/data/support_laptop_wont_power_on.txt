@@ -1,0 +1,107 @@
+TECHSTORE PLUS — SUPPORT ARTICLE
+TITLE: Laptop Won't Power On — Diagnosis and Resolution
+Article ID: SUP-LPT-001
+Effective January 2024
+Applies to: All TechStore Plus laptop models (Laptop Pro X1, Laptop Air S2,
+            Laptop Max Pro, Laptop Lite V3, WorkStation Z)
+
+================================================================================
+SYMPTOM
+================================================================================
+
+Pressing the Power button produces no response: no LED activity, no fan spin,
+no display output. The laptop appears completely dead, or shows only a brief
+LED flash before shutting down again.
+
+================================================================================
+SAFETY FIRST
+================================================================================
+
+- Do NOT attempt to open the laptop chassis — doing so voids the Standard Warranty.
+  If you suspect a hardware fault requiring internal access, use the warranty
+  claim process (see support_warranty_claim_process.txt).
+- Disconnect all external devices (monitors, USB drives, docking stations) before
+  starting. External devices can prevent a normal POST (power-on self-test).
+
+================================================================================
+STEP-BY-STEP DIAGNOSIS
+================================================================================
+
+STEP 1 — Verify power adapter and outlet
+- Connect the original TechStore Plus power adapter (a third-party adapter may
+  not supply sufficient wattage). The Laptop Pro X1 and Max Pro require a 65W
+  USB-C adapter; Laptop Air S2 and Lite V3 use a 45W USB-C adapter; WorkStation Z
+  uses a 130W barrel connector adapter.
+- Plug directly into a wall outlet — not a power strip or UPS, which can cause
+  voltage irregularities.
+- Look for the charging LED indicator:
+  * Solid amber: charging (battery was deeply discharged)
+  * Solid white: charged and connected
+  * No LED: adapter not recognized or port damaged — skip to Step 4.
+- If the LED lights up, wait 5 minutes, then attempt to power on.
+
+STEP 2 — Perform a hard reset (EC reset)
+This resets the Embedded Controller, which manages power sequencing.
+1. Disconnect the power adapter.
+2. Press and hold the Power button for 15 seconds. The laptop will not turn on —
+   you are draining residual capacitor charge.
+3. Reconnect the power adapter.
+4. Press the Power button normally (1 second).
+This resolves the majority of "dead laptop" reports and should be tried before
+any other steps.
+
+STEP 3 — Test with a minimal configuration
+1. Remove any USB drives, SD cards, HDMI cables, or docking stations.
+2. If the laptop has a removable battery (Laptop Air S2 revision 1 only):
+   remove the battery, connect AC power, and try to power on.
+3. Attempt to power on. If successful, reconnect peripherals one at a time to
+   identify the problematic device.
+
+STEP 4 — Check the charging port
+- Inspect the USB-C charging port for debris or bent pins using a flashlight.
+- Gently clear debris with a dry toothbrush. Do NOT insert metal objects.
+- Try the second USB-C port if available (the Laptop Pro X1 has two USB-C ports).
+
+STEP 5 — Battery deep-discharge recovery
+If the battery was fully discharged and left uncharged for an extended period
+(over 3 months), it may have entered a protection lockout state.
+1. Connect the power adapter.
+2. Do NOT press the Power button.
+3. Leave the laptop connected for a minimum of 4 hours.
+4. After 4 hours, attempt to power on.
+This allows the battery management IC to slowly recover the cell voltage above
+the lockout threshold.
+
+STEP 6 — BIOS/UEFI recovery (advanced)
+If the laptop powers on briefly but shuts off immediately:
+1. With the adapter connected, hold Fn + Power for 10 seconds. This forces
+   a UEFI recovery on all TechStore Plus laptop models.
+2. If a recovery screen appears, follow on-screen instructions to restore the
+   default BIOS settings.
+3. If no recovery screen appears, proceed to warranty service.
+
+================================================================================
+STILL NOT WORKING?
+================================================================================
+
+If none of the above steps resolve the issue, the most likely causes are:
+- Failed DC power circuit or charging IC (hardware fault — warranty eligible
+  if within coverage period)
+- Defective battery cell (warranty eligible within 12 months of purchase)
+- Motherboard component failure (warranty eligible)
+
+File a warranty claim at techstoreplus.com/claims or call 1-800-TECH-PLUS.
+Bring your proof of purchase and serial number. Do NOT open the chassis — any
+signs of unauthorized disassembly will be noted and may affect warranty eligibility.
+
+Warranty period reminder:
+- Standard Warranty: 12 months from purchase (all models)
+- Extended Warranty: 24 months (purchased separately)
+- Premium Protection Plan: 36 months with accidental damage coverage
+
+For full warranty terms, see policy_warranty_terms.txt.
+
+Contact:
+Email:  support@techstoreplus.com
+Phone:  1-800-TECH-PLUS (Mon–Fri 9:00–18:00, Sat 10:00–14:00)
+Chat:   Available 24/7 at techstoreplus.com

@@ -1,0 +1,6 @@
+tier,duration_months,covers_accidental,covers_water,monthly_price_usd,effective_date,policy_version,superseded_by
+basic,12,No,No,0.00,2021-01-01,v2.0 and v3.0,
+standard_2023,24,No,No,4.99,2023-01-01,v2.0 (2023),standard_2024
+standard_2024,30,No,No,4.99,2024-01-01,v3.0 (2024),
+premium_2023,36,No,No,9.99,2023-01-01,v2.0 (2023),premium_2024
+premium_2024,36,Yes,Yes,9.99,2024-01-01,v3.0 (2024),
