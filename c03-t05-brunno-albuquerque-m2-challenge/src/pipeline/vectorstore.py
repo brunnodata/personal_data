@@ -27,6 +27,8 @@ WHY MMR (for your Stop 2 docstring)?
 
 from __future__ import annotations
 
+from pathlib import Path
+
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
@@ -47,7 +49,6 @@ MMR_K: int = 6
 We pass more documents than the final context window (RERANK_TOP_N in
 reranker.py) so the cross-encoder has a larger candidate pool to precision-sort.
 """
-
 MMR_FETCH_K: int = 20
 """Candidate pool size for MMR.
 
@@ -75,7 +76,6 @@ def build_vectorstore(chunks: list[Document]) -> Chroma:
     call :func:`load_vectorstore` instead — it reads from disk without API calls.
 
     The collection uses cosine similarity (ChromaDB default).
-
     Args:
         chunks: Output of :func:`~src.pipeline.loader.chunk_documents`.
 
@@ -87,7 +87,6 @@ def build_vectorstore(chunks: list[Document]) -> Chroma:
         openai.AuthenticationError: If ``OPENAI_API_KEY`` is not set.
 
     Example::
-
         from src.pipeline.loader import load_documents, chunk_documents
         from src.pipeline.vectorstore import build_vectorstore
 
@@ -97,15 +96,36 @@ def build_vectorstore(chunks: list[Document]) -> Chroma:
         print(f"Stored {vs._collection.count()} embeddings")
 
     TODO — Stop 1:
-        1. Validate that *chunks* is non-empty; raise ``ValueError`` if not.
+        1. Validate that *chunks* is non-empty; raise ``ValueError`` if not. (OK)
         2. Call ``Chroma.from_documents(documents=chunks, embedding=_get_embeddings(),
-               persist_directory=CHROMA_DIR, collection_name=COLLECTION_NAME)``.
-        3. Return the resulting Chroma instance.
-        4. Print a confirmation: "Built vectorstore with N chunks at CHROMA_DIR".
+               persist_directory=CHROMA_DIR, collection_name=COLLECTION_NAME)``. (OK)
+        3. Return the resulting Chroma instance. (OK)
+        4. Print a confirmation: "Built vectorstore with N chunks at CHROMA_DIR". (OK)
     """
-    raise NotImplementedError(
-        "TODO: implement build_vectorstore() — see Stop 1 in m2-capstone-rag-knowledge-base.md"
+    # 1. Validate chunks is non-empty
+    if not chunks:
+        raise ValueError(
+            "Cannot build vectorstore: chunks list is empty. "
+            "Run load_documents() and chunk_documents() first."
+        )
+
+    print(f"\n[vectorstore] Building vectorstore with {len(chunks)} chunks...")
+    print(f"[vectorstore] Embedding model: text-embedding-3-small")
+    print(f"[vectorstore] Persisting to: {CHROMA_DIR}")
+
+    # 2. Create and persist the Chroma collection
+    vectorstore = Chroma.from_documents(
+        documents=chunks,
+        embedding=_get_embeddings(),
+        persist_directory=CHROMA_DIR,
+        collection_name=COLLECTION_NAME,
     )
+
+    # 3. Confirm & 4.Print a confirmation
+    count = vectorstore._collection.count()
+    print(f"[vectorstore] ✓ Built vectorstore with {count} embeddings at '{CHROMA_DIR}'")
+
+    return vectorstore
 
 
 def load_vectorstore() -> Chroma:
@@ -119,26 +139,43 @@ def load_vectorstore() -> Chroma:
 
     Raises:
         FileNotFoundError: If ``CHROMA_DIR`` does not exist or is empty.
-
-    Example::
+	
+	Example::
 
         vs = load_vectorstore()
         docs = vs.similarity_search("return policy", k=4)
 
     TODO — Stop 1:
         1. Check that CHROMA_DIR exists on disk; raise a clear FileNotFoundError
-           if not (hint: use ``pathlib.Path(CHROMA_DIR).exists()``).
+           if not (hint: use ``pathlib.Path(CHROMA_DIR).exists()``). (OK)
         2. Instantiate ``Chroma(persist_directory=CHROMA_DIR,
-               embedding_function=_get_embeddings(),
-               collection_name=COLLECTION_NAME)``.
+                                embedding_function=_get_embeddings(),
+                                collection_name=COLLECTION_NAME)``.  (OK)
         3. Return the instance.
         4. Print: "Loaded vectorstore from CHROMA_DIR (N chunks)."
     """
-    raise NotImplementedError(
-        "TODO: implement load_vectorstore() — see Stop 1 in m2-capstone-rag-knowledge-base.md"
+    # 1. Check that CHROMA_DIR exists
+    chroma_path = Path(CHROMA_DIR)
+    if not chroma_path.exists() or not any(chroma_path.iterdir()):
+        raise FileNotFoundError(
+            f"ChromaDB directory not found or empty: '{CHROMA_DIR}'. "
+            "Run build_vectorstore() first to create and persist the collection."
+        )
+
+    # 2. Instantiate from the persisted directory
+    vectorstore = Chroma(
+        persist_directory=CHROMA_DIR,
+        embedding_function=_get_embeddings(),
+        collection_name=COLLECTION_NAME,
     )
 
+    # 3. Return the instance & 4.Print confirmation
+    count = vectorstore._collection.count()
+    print(f"[vectorstore] Loaded vectorstore from '{CHROMA_DIR}' ({count} chunks)")
 
+    return vectorstore
+
+#Stop 2
 def get_mmr_retriever(vectorstore: Chroma) -> BaseRetriever:
     """Wrap *vectorstore* in an MMR retriever.
 
@@ -149,7 +186,7 @@ def get_mmr_retriever(vectorstore: Chroma) -> BaseRetriever:
         receives redundant context and misses more specific product information.
 
         MMR selects the first document by pure similarity, then each subsequent
-        document by the trade-off: ``lambda * sim(d, q) - (1 - lambda) * max_sim(d, selected)``.
+        document by the trade-off: lambda * sim(d, query) - (1 - lambda) * max_sim(d, already_selected)
         With the default lambda=0.5, relevance and diversity are weighted equally.
         With fetch_k=20 >> k=6, MMR has enough candidates to find diverse results.
 
@@ -159,7 +196,7 @@ def get_mmr_retriever(vectorstore: Chroma) -> BaseRetriever:
     Returns:
         A :class:`~langchain_core.retrievers.BaseRetriever` configured for MMR.
 
-    Example::
+ Example::
 
         retriever = get_mmr_retriever(vs)
         results = retriever.invoke("laptop warranty")
@@ -173,6 +210,14 @@ def get_mmr_retriever(vectorstore: Chroma) -> BaseRetriever:
         4. Verify with a broad query ("Tell me about laptop products") that chunks
            come from multiple source files — document this in docs/chunk-experiment.md.
     """
-    raise NotImplementedError(
-        "TODO: implement get_mmr_retriever() — see Stop 2 in m2-capstone-rag-knowledge-base.md"
+    # lambda_mult=0.5 balances relevance vs. diversity (0=max diversity, 1=max relevance)
+    retriever = vectorstore.as_retriever(
+        search_type="mmr",
+        search_kwargs={
+            "k": MMR_K,
+            "fetch_k": MMR_FETCH_K,
+            "lambda_mult": 0.5,
+        },
     )
+    print(f"[vectorstore] MMR retriever ready (k={MMR_K}, fetch_k={MMR_FETCH_K})")
+    return retriever

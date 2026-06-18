@@ -53,6 +53,10 @@ of latency, consider ``cross-encoder/ms-marco-electra-base``.
 """
 
 
+# Module-level singleton to avoid reloading the model on every call
+_reranker = None
+
+
 def rerank(
     query: str,
     docs: list[Document],
@@ -66,6 +70,17 @@ def rerank(
 
     The downstream RAG chain interface does not change: it still receives a list
     of Documents, just a smaller and more relevant one.
+
+    #9
+    WHY CROSS-ENCODING IS MORE ACCURATE THAN BI-ENCODER COSINE SIMILARITY:
+    A bi-encoder embeds the query and document independently, then compares the
+    resulting vectors with cosine similarity. This loses fine-grained interactions
+    between query tokens and document tokens. A cross-encoder feeds both together
+    into a transformer, allowing full cross-attention across every token pair.
+    This captures nuanced relevance (entailment, intent matching, etc.) that
+    simple vector similarity cannot, which is why it produces higher precision
+    rankings (as explained in the module-level docstring above).
+
 
     Args:
         query:  The user's question string.
@@ -89,19 +104,48 @@ def rerank(
         assert len(final_docs) <= RERANK_TOP_N
 
     TODO — Stop 2:
-        1. Validate inputs: raise ValueError if docs is empty or top_n < 1.
+        1. Validate inputs: raise ValueError if docs is empty or top_n < 1. (OK)
         2. Import ``from sentence_transformers import CrossEncoder`` inside the
-           function (lazy import avoids loading the model until it is needed).
+           function (lazy import avoids loading the model until it is needed).  (OK)
         3. Instantiate ``CrossEncoder(_CROSS_ENCODER_MODEL)`` — consider caching
-           it as a module-level singleton to avoid reloading on every call.
-        4. Build pairs: ``[(query, doc.page_content) for doc in docs]``.
-        5. Call ``reranker.predict(pairs)`` to get a list of float scores.
-        6. Sort ``zip(scores, docs)`` descending by score.
-        7. Add ``{'rerank_score': score}`` to each returned doc's metadata.
-        8. Return the top *top_n* documents.
+           it as a module-level singleton to avoid reloading on every call. (OK)
+        4. Build pairs: ``[(query, doc.page_content) for doc in docs]``. (OK)
+        5. Call ``reranker.predict(pairs)`` to get a list of float scores. (OK)
+        6. Sort ``zip(scores, docs)`` descending by score. (OK)
+        7. Add ``{'rerank_score': score}`` to each returned doc's metadata. (OK)
+        8. Return the top *top_n* documents. (OK)
         9. Add a docstring comment explaining WHY cross-encoding is more accurate
-           than bi-encoder cosine similarity (see module-level docstring above).
+           than bi-encoder cosine similarity (see module-level docstring above). (OK)
     """
-    raise NotImplementedError(
-        "TODO: implement rerank() — see Stop 2 in m2-capstone-rag-knowledge-base.md"
-    )
+    # 1. Input validation
+    if not docs:
+        raise ValueError("Cannot rerank: docs list is empty.")
+    if top_n < 1:
+        raise ValueError("top_n must be at least 1.")
+
+    # 2. Lazy import
+    from sentence_transformers import CrossEncoder
+
+    # 3. Singleton pattern — load only once
+    global _reranker
+    if _reranker is None:
+        _reranker = CrossEncoder(_CROSS_ENCODER_MODEL)
+
+    # 4. Build (query, document) pairs
+    pairs = [(query, doc.page_content) for doc in docs]
+
+    # 5. Get relevance scores from the cross-encoder
+    scores = _reranker.predict(pairs)
+
+    # 6. Sort documents by score (descending)
+    ranked = sorted(zip(scores, docs), key=lambda x: x[0], reverse=True)
+
+    # 7 & 8. Add rerank_score to metadata and return top_n documents
+    top_docs = []
+    for score, doc in ranked[:top_n]:
+        # Add score to metadata (create new metadata dict to avoid mutating original)
+        new_metadata = dict(doc.metadata)
+        new_metadata["rerank_score"] = float(score)
+        top_docs.append(Document(page_content=doc.page_content, metadata=new_metadata))
+
+    return top_docs
